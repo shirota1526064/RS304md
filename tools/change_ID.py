@@ -10,8 +10,9 @@ from uart import uart
 def main():    
     args = sys.argv
     servo = uart()
-    newID=int(args[1])
-    servo.ChangeID(newID)
+    ID=int(args[1])
+    newID=int(args[2])
+    servo.ChangeID(ID,newID)
     servo.Close()
 
 
